@@ -321,7 +321,7 @@ class AnnoucementPlugin(commands.Cog):
                 msg = f"{role} {msg}"
                 role_mention = ""
 
-        await channel.send(f"{role_mention}\n{msg}")
+        await channel.send(f"{msg}\n\n{role_mention}")
         await ctx.send("Done")
 
         if isinstance(role, discord.Role):
